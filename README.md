@@ -1,4 +1,4 @@
-# Instalacion-KVM
+# Instalación-KVM
 
 
 ![kvm](descarga-1.png)
@@ -12,9 +12,7 @@ Instalación de KVM en maquina virtualizada , vamos a utilizar la maquina prepar
 
 
 
-# Contenido
-- [Instalacion-KVM](#instalacion-kvm)
-- [Contenido](#contenido)
+# Índice
 - [1. ¿Qué es KVM?](#1-qué-es-kvm)
 - [2. Ventajas de KVM e inconvenientes](#2-ventajas-de-kvm-e-inconvenientes)
 - [3. qemu, libvirt, libvirtd, virsh y virt-manager](#3-qemu-libvirt-libvirtd-virsh-y-virt-manager)
