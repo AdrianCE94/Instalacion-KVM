@@ -101,3 +101,4 @@ ejecutar en maquina virtualizada en mi caso o sobre linux en la maquina anfitrio
 egrep -c '(vmx|svm)' /proc/cpuinfo
 ```
 
+![cpu](image-2.png)
