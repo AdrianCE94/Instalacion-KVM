@@ -114,8 +114,6 @@ Hemos instalado el core de KVM y los paquetes necesatrios para realizar bridges.
 
 # 6. Comprobaciones
 
--servicio libvirtd
-
 ```bash
 systemct start libvirtd
 ```
@@ -125,3 +123,20 @@ systemctl status libvirtd
 ```
 
 ![status](image-4.png)
+
+
+Si nos encontramos con  errores de kvm de permisos,
+
+editar fichero /etc/libvirt/qemu.conf
+
+```bash
+nano /etc/libvirt/qemu.conf
+```
+CTRL + W y buscar user y group, cambiar el usuario y grupo a root
+ALT + W para buscar siguiente
+```bash
+user = "root"
+group = "root"
+```
+
+![virtdd](image-5.png)
