@@ -5,7 +5,11 @@
 
 Instalación de KVM en maquina virtualizada , vamos a utilizar la maquina preparada , puedes consultar como preparar la maquina en el siguiente enlace 
 
-[Preparar maquina virtualizada](https://github.com/AdrianCE94/maquinaDebian12)
+
+[Repositorio máquinaDebian12](https://github.com/AdrianCE94/maquinaDebian12) <a href="https://github.com/AdrianCE94/maquinaDebian12" target="_blank"></a>
+
+
+
 
 
 # Contenido
