@@ -1,7 +1,7 @@
 # Instalación-KVM
 
 <p align="center">
-![kvm](descarga-1.png)
+    <img src="descarga-1.png">
 </p>
 
 Instalación de KVM en maquina virtualizada , vamos a utilizar la maquina preparada , puedes consultar como preparar la maquina en el siguiente enlace 
