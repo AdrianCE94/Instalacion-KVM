@@ -11,18 +11,17 @@ Instalación de KVM en maquina virtualizada , vamos a utilizar la maquina prepar
 
 </div>
 
-
-
-
-
-
 # Índice
+- [Instalación-KVM](#instalación-kvm)
+- [Índice](#índice)
 - [1. ¿Qué es KVM?](#1-qué-es-kvm)
 - [2. Ventajas de KVM e inconvenientes](#2-ventajas-de-kvm-e-inconvenientes)
 - [3. qemu, libvirt, libvirtd, virsh y virt-manager](#3-qemu-libvirt-libvirtd-virsh-y-virt-manager)
 - [4. Requirements Hardware \& Software](#4-requirements-hardware--software)
 - [5. Instalación de KVM en Debian 12](#5-instalación-de-kvm-en-debian-12)
     - [5.1 Preparando el entorno de trabajo](#51-preparando-el-entorno-de-trabajo)
+    - [5.2  Comando  para instalar KVM](#52--comando--para-instalar-kvm)
+- [6. Comprobaciones](#6-comprobaciones)
 ---
 # 1. ¿Qué es KVM?
 
@@ -100,3 +99,16 @@ egrep -c '(vmx|svm)' /proc/cpuinfo
 ```
 
 ![cpu](image-2.png)
+
+### 5.2  Comando  para instalar KVM
+
+
+```bash	
+sudo apt install -y qemu-kvm libvirt-clients libvirt-daemon-system bridge-utils libguestfs-tools genisoimage virtinst libosinfo-bin virt-manager
+```	
+
+![install](image-3.png)
+
+Hemos instalado el core de KVM y los paquetes necesatrios para realizar bridges.
+
+# 6. Comprobaciones
