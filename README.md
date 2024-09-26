@@ -10,11 +10,13 @@ Instalacion de KVM en maquina virtualizada
 
 # 1. ¿Qué es KVM?
 
-KVM (Kernel Virtual Machine) es una arquitectura de virtualización completa .
+KVM (Kernel Virtual Machine) es una arquitectura de virtualización complet de software libre.
 
-Se presenta como una alternativa a sistemas de virtualización propietarios como Hyper-V y VMware. Apoyándose en el sistema Linux, permite crear una infraestructura completa de virtualización con capacidad de conexión a cabinas de almacenamiento, alta disponibilidad y redundancia en tiempo real, migración de máquinas virtuales en caliente, snapshots y gestión remota y centralizada.
+Se presenta como una alternativa a sistemas de virtualización propietarios como Hyper-V y VMware. 
 
-Es una solución de virtualización de software libre para implementar virtualización completa sobre Linux. 
+KVM tiene dos componentes esenciales que son:
+- **El módulo del kernel kvm.ko** que proporciona la infraestructura de virtualización del núcleo.
+- **QEMU** que proporciona la emulación de hardware.
 
 # 2. Ventajas de KVM e inconvenientes
 
