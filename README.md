@@ -111,4 +111,6 @@ sudo apt install -y qemu-kvm libvirt-clients libvirt-daemon-system bridge-utils 
 
 Hemos instalado el core de KVM y los paquetes necesatrios para realizar bridges.
 
+---
+
 # 6. Comprobaciones
