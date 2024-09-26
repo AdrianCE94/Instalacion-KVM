@@ -21,7 +21,6 @@ Instalación de KVM en maquina virtualizada , vamos a utilizar la maquina prepar
 - [5. Instalación de KVM en Debian 12](#5-instalación-de-kvm-en-debian-12)
     - [5.1 Preparando el entorno de trabajo](#51-preparando-el-entorno-de-trabajo)
     - [5.2  Comando  para instalar KVM](#52--comando--para-instalar-kvm)
-- [6. Comprobaciones](#6-comprobaciones)
 ---
 # 1. ¿Qué es KVM?
 
@@ -114,3 +113,15 @@ Hemos instalado el core de KVM y los paquetes necesatrios para realizar bridges.
 ---
 
 # 6. Comprobaciones
+
+-servicio libvirtd
+
+```bash
+systemct start libvirtd
+```
+
+```bash
+systemctl status libvirtd
+```
+
+![status](image-4.png)
