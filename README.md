@@ -79,7 +79,7 @@ Activamos la virtualizacion anidada y PAE/NX en la maquina virtualizada, para el
 
 ![pae](image-1.png)
 
-**NOTA IMPORTANTE**: Si NO deja activar la virtualización anidada , tenemos que ir a nuestra maquina anfitriona y activar por comandos.
+**NOTA IMPORTANTE**: Si NO deja activar la virtualización anidada , tenemos que ir a nuestra maquina anfitriona y habilitarlo por comandos.
 
 WINDOWS:
 
@@ -90,13 +90,13 @@ VBoxManage modifyvm "Nombre de tu máquina" --nested-hw-virt on
 
 ![virt](image.png)
 
-LINUX: sobre la terminal de la maquina anfitriona
+LINUX: sobre la terminal de la máquina anfitriona
 ```bash
 VBoxManage modifyvm "Nombre de tu máquina" --nested-hw-virt on
 ``` 
 Buscar cuántas CPUs tenemos que soporten virtualización (El procesador tiene que tener más de un núcleo):
 ejecutar en maquina virtualizada en mi caso o sobre linux en la maquina anfitriona
-
+(como root)
 ```bash
 egrep -c '(vmx|svm)' /proc/cpuinfo
 ```
