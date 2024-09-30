@@ -75,7 +75,7 @@ Antes de instalar KVM, es necesario comprobar si el procesador soporta la virtua
 ### 5.1 Preparando el entorno de trabajo
 Activamos la virtualizacion anidada y PAE/NX en la maquina virtualizada, para ello : abrir la configuración de la maquina virtualizada, seleccionar la pestaña de procesador y activar la casilla de virtualizacion anidada y PAE/NX.
 
-![pae](image-1.png)
+![pae](imgs/image-1.png)
 
 **NOTA IMPORTANTE**: Si NO deja activar la virtualización anidada , tenemos que ir a nuestra maquina anfitriona y habilitarlo por comandos.
 
@@ -86,7 +86,7 @@ cd "C:\Program Files\Oracle\VirtualBox"
 VBoxManage modifyvm "Nombre de tu máquina" --nested-hw-virt on
 ```
 
-![virt](image.png)
+![virt](imgs/image.png)
 
 LINUX: sobre la terminal de la máquina anfitriona
 ```bash
@@ -99,7 +99,7 @@ ejecutar en maquina virtualizada en mi caso o sobre linux en la maquina anfitrio
 egrep -c '(vmx|svm)' /proc/cpuinfo
 ```
 
-![cpu](image-2.png)
+![cpu](imgs/image-2.png)
 
 ### 5.2  Comando  para instalar KVM
 
@@ -108,7 +108,7 @@ egrep -c '(vmx|svm)' /proc/cpuinfo
 sudo apt install -y qemu-kvm libvirt-clients libvirt-daemon-system bridge-utils libguestfs-tools genisoimage virtinst libosinfo-bin virt-manager
 ```	
 
-![install](image-3.png)
+![install](imgs/image-3.png)
 
 Hemos instalado el core de KVM y los paquetes necesatrios para realizar bridges.
 
@@ -124,7 +124,7 @@ systemct start libvirtd
 systemctl status libvirtd
 ```
 
-![status](image-4.png)
+![status](imgs/image-4.png)
 
 
 Si nos encontramos con  errores de kvm de permisos,
@@ -141,7 +141,7 @@ user = "root"
 group = "root"
 ```
 
-![virtdd](image-5.png)
+![virtdd](imgs/image-5.png)
 
 # 7.-Agregar nuestro usuario al grupo de administradores de KVM
 
@@ -153,7 +153,7 @@ adduser NombreUsuario libvirt-qemu
 newgrp libvirt
 newgrp libvirt-qemu
 ```
-![grp](image-6.png)
+![grp](imgs/image-6.png)
 
 **_NOTA_**: info sobre virt-manager,
  si queremos manejar MVs con un usuario que no sea root, debe estar añadido al grupo “libvirt”.
@@ -171,7 +171,7 @@ si iniciamos en la terminal virt-manager, nos aparecerá la interfaz gráfica de
 virt-manager
 ``` 
 
-![virt-mang](image-7.png)
+![virt-mang](imgs/image-7.png)
 
 ---
 
