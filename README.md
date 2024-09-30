@@ -21,7 +21,8 @@ Instalación de KVM en maquina virtualizada , vamos a utilizar la maquina prepar
 - [5. Instalación de KVM en Debian 12](#5-instalación-de-kvm-en-debian-12)
     - [5.1 Preparando el entorno de trabajo](#51-preparando-el-entorno-de-trabajo)
     - [5.2  Comando  para instalar KVM](#52--comando--para-instalar-kvm)
-- [7 5.-Agregar nuestro usuario al grupo de administradores de KVM](#7-5-agregar-nuestro-usuario-al-grupo-de-administradores-de-kvm)
+- [7.-Agregar nuestro usuario al grupo de administradores de KVM](#7-agregar-nuestro-usuario-al-grupo-de-administradores-de-kvm)
+- [8.Validación](#8validación)
 ---
 # 1. ¿Qué es KVM?
 
@@ -142,7 +143,7 @@ group = "root"
 
 ![virtdd](image-5.png)
 
-# 7 5.-Agregar nuestro usuario al grupo de administradores de KVM
+# 7.-Agregar nuestro usuario al grupo de administradores de KVM
 
 ```bash
 su - 
@@ -153,3 +154,33 @@ newgrp libvirt
 newgrp libvirt-qemu
 ```
 ![grp](image-6.png)
+
+**_NOTA_**: info sobre virt-manager,
+ si queremos manejar MVs con un usuario que no sea root, debe estar añadido al grupo “libvirt”.
+```bash
+sudo -
+NombreUsuario
+cat /usr/share/doc/virt-manager/README.Debian
+```
+**_NOTA_** : Se recomienda instalar ssh para poder manejar las MVs de forma remota.
+
+
+si iniciamos en la terminal virt-manager, nos aparecerá la interfaz gráfica de KVM
+
+```bash 
+virt-manager
+``` 
+
+![virt-mang](image-7.png)
+
+---
+
+# 8.Validación
+
+Para comprobar que KVM está instalado y funcionando correctamente, ejecutamos el siguiente comando:
+
+```bash
+virt-host-validate
+virt-host-validate | grep -i 'FALLA\ADVERTENCIA'
+```
+![VALIDATE](image-8.png)
