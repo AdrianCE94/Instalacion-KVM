@@ -192,4 +192,4 @@ Con esto hemos terminado la instalación de KVM en nuestra máquina virtualizada
   target="_blank">Crear MV con KVM</a>
 </div>
 
-<video controls src="ty.mp4" title="Title"></video>
+![ciao](descarga.png)
