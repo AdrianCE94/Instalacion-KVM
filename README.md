@@ -183,4 +183,4 @@ Para comprobar que KVM está instalado y funcionando correctamente, ejecutamos e
 virt-host-validate
 virt-host-validate | grep -i 'FALLA\ADVERTENCIA'
 ```
-![VALIDATE](image-8.png)
+![VALIDATE](img/image-8.png)
