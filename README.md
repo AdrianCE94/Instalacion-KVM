@@ -21,6 +21,7 @@ Instalación de KVM en maquina virtualizada , vamos a utilizar la maquina prepar
 - [5. Instalación de KVM en Debian 12](#5-instalación-de-kvm-en-debian-12)
     - [5.1 Preparando el entorno de trabajo](#51-preparando-el-entorno-de-trabajo)
     - [5.2  Comando  para instalar KVM](#52--comando--para-instalar-kvm)
+- [7 5.-Agregar nuestro usuario al grupo de administradores de KVM](#7-5-agregar-nuestro-usuario-al-grupo-de-administradores-de-kvm)
 ---
 # 1. ¿Qué es KVM?
 
@@ -140,3 +141,15 @@ group = "root"
 ```
 
 ![virtdd](image-5.png)
+
+# 7 5.-Agregar nuestro usuario al grupo de administradores de KVM
+
+```bash
+su - 
+NombreUsuario
+adduser NombreUsuario libvirt
+adduser NombreUsuario libvirt-qemu
+newgrp libvirt
+newgrp libvirt-qemu
+```
+![grp](image-6.png)
