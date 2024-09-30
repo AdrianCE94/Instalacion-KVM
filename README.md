@@ -165,16 +165,6 @@ cat /usr/share/doc/virt-manager/README.Debian
 **_NOTA_** : Se recomienda instalar ssh para poder manejar las MVs de forma remota.
 
 
-si iniciamos en la terminal virt-manager, nos aparecerá la interfaz gráfica de KVM
-
-```bash 
-virt-manager
-``` 
-
-![virt-mang](imgs/image-7.png)
-
----
-
 # 8.Validación
 
 Para comprobar que KVM está instalado y funcionando correctamente, ejecutamos el siguiente comando:
@@ -184,3 +174,13 @@ virt-host-validate
 virt-host-validate | grep -i 'FALLA\ADVERTENCIA'
 ```
 ![VALIDATE](imgs/image-8.png)
+
+si iniciamos en la terminal virt-manager, nos aparecerá la interfaz gráfica de KVM
+
+```bash 
+virt-manager
+``` 
+
+![virt-mang](imgs/image-7.png)
+
+---
