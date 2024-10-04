@@ -84,14 +84,7 @@ Activamos la virtualizacion anidada y PAE/NX en la maquina virtualizada, para el
 
 **NOTA IMPORTANTE**: Si NO deja activar la virtualización anidada , tenemos que ir a nuestra maquina anfitriona y habilitarlo por comandos.
 
-WINDOWS:
-(se instalaria una maquina linux y sobre la maquina el KVM)
-```POWERSHELL
-cd "C:\Program Files\Oracle\VirtualBox"
-VBoxManage modifyvm "Nombre de tu máquina" --nested-hw-virt on
-```
 
-![virt](imgs/image.png)
 
 LINUX: sobre la terminal de la máquina anfitriona
 ```bash
