@@ -12,7 +12,7 @@ Instalación de KVM en maquina virtualizada , vamos a utilizar la maquina prepar
 </div>
 Descargar ova:
 <div align="center">
- <a href="https://github.com/AdrianCE94/maquinaDebian12" target="_blank">Dowload OVA</a>
+ <a href="https://drive.google.com/file/d/1sIQKebnwafYNS-PbIBlXLz3HqbJ7Tvp0/view?usp=sharing" target="_blank">Dowload OVA</a>
 
 </div>
 
