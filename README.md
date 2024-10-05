@@ -192,7 +192,7 @@ Con esto hemos terminado la instalación de KVM en nuestra máquina virtualizada
 
 
 <div align="center">
- <a href=""
+ <a href="https://github.com/AdrianCE94/RedKVM"
   target="_blank">Configurar Red KVM</a>
 </div>
 
