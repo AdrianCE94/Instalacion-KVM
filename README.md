@@ -14,8 +14,7 @@ También puedes descargar directamente la máquinaa:
 <div align="center">
  <a href="https://drive.google.com/file/d/1sIQKebnwafYNS-PbIBlXLz3HqbJ7Tvp0/view?usp=sharing" target="_blank">Dowload OVA</a>
 </div>
-> [!WARNING]
->Cuidado, si descargas la ova tiene una configuracion estatica , ajustar el archivo /etc/network/interfaces a tu rango de ip.
+ si descargas la ova tiene una configuracion estatica , ajustar el archivo /etc/network/interfaces a tu rango de ip.
 
 # Índice
 - [Instalación-KVM](#instalación-kvm)
