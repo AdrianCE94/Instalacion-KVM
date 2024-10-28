@@ -184,7 +184,10 @@ virt-manager
 ---
 
 Con esto hemos terminado la instalación de KVM en nuestra máquina virtualizada y hemos comprobado que está funcionando correctamente.A partir de aquí, ya podemos crear máquinas virtuales con KVM.Si quieres saber cómo crear una máquina virtual con KVM o como configurar la red , puedes consultar los siguiente enlaces:
-
+<div align="center">
+ <a href="https://github.com/AdrianCE94/Instalacion-KVM"
+  target="_blank">Instalar KVM</a>
+</div>
 <div align="center">
  <a href="https://github.com/AdrianCE94/creacionMV-KVM"
   target="_blank">Crear MV con KVM</a>
