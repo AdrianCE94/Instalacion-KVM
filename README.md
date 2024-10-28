@@ -115,7 +115,7 @@ Hemos instalado el core de KVM y los paquetes necesatrios para realizar bridges.
 # 6. Comprobaciones
 
 ```bash
-systemct start libvirtd
+systemctl start libvirtd
 ```
 
 ```bash
