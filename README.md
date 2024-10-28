@@ -10,11 +10,11 @@ Instalación de KVM en maquina virtualizada , vamos a utilizar la maquina prepar
  <a href="https://github.com/AdrianCE94/maquinaDebian12" target="_blank">Repositorio máquinaDebian12</a>
 
 </div>
-También puedes descargar directamente la máquinaa:
+También puedes descargar directamente la máquinaa: (contraseña root : peque)
 <div align="center">
  <a href="https://drive.google.com/file/d/1sIQKebnwafYNS-PbIBlXLz3HqbJ7Tvp0/view?usp=sharing" target="_blank">Dowload OVA</a>
 </div>
- si descargas la ova tiene una configuracion estatica , ajustar el archivo /etc/network/interfaces a tu rango de ip.
+ si descargas la ova tiene una configuracion estatica , ajustar el archivo /etc/network/interfaces a tu rango de ip. 
 
 # Índice
 - [Instalación-KVM](#instalación-kvm)
