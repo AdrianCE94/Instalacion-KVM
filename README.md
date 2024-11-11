@@ -31,7 +31,7 @@ También puedes descargar directamente la máquinaa: (contraseña root : peque)
 ---
 # 1. ¿Qué es KVM?
 
-KVM (Kernel Virtual Machine) es una arquitectura de virtualización complet de software libre.
+KVM (Kernel Virtual Machine) es una arquitectura de virtualización completa de software libre.
 
 Se presenta como una alternativa a sistemas de virtualización propietarios como Hyper-V y VMware. 
 
@@ -55,7 +55,7 @@ KVM tiene dos componentes esenciales que son:
 - **QEMU** es un emulador de hardware y virtualizador de máquinas. Es el encargado de emular el hardware de la máquina virtual.
 - **libvirt** es un toolkit para gestionar plataformas de virtualización 
 - **libvirtd** es un demonio que actúa como servidor de libvirt.
-- **virsh** es una interfaz de línea de comandos para gestionar máquinas virtuales.1
+- **virsh** es una interfaz de línea de comandos para gestionar máquinas virtuales.
 - **virt-manager** es una interfaz gráfica para gestionar máquinas virtuales.
 
 
