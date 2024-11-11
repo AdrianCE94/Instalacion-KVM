@@ -108,6 +108,48 @@ sudo apt install -y qemu-kvm libvirt-clients libvirt-daemon-system bridge-utils 
 
 ![install](imgs/image-3.png)
 
+# Explicación de los paquetes de KVM en Debian 12
+
+A continuación, se describen los paquetes necesarios para instalar y configurar KVM en Debian 12:
+
+## `qemu-kvm`
+- **Descripción**: Este es el paquete principal para la virtualización en Linux utilizando KVM (Kernel-based Virtual Machine).
+- **Función**: Instala el hipervisor KVM, que permite ejecutar máquinas virtuales sobre el núcleo de Linux.
+
+## `libvirt-clients`
+- **Descripción**: Paquete que incluye herramientas cliente para interactuar con el sistema de virtualización `libvirt`.
+- **Función**: Proporciona herramientas para gestionar máquinas virtuales, redes y almacenamiento, usando el servicio `libvirt`.
+
+## `libvirt-daemon-system`
+- **Descripción**: Este paquete incluye el servicio `libvirt` que actúa como intermediario entre los usuarios y el hipervisor de virtualización.
+- **Función**: Proporciona la infraestructura necesaria para administrar las máquinas virtuales, redes y almacenamiento de manera centralizada.
+
+## `bridge-utils`
+- **Descripción**: Paquete que contiene herramientas para configurar redes puente en sistemas Linux.
+- **Función**: Permite a las máquinas virtuales conectarse a la red física del host mediante un puente de red, facilitando la comunicación con otras máquinas en la misma red.
+
+## `libguestfs-tools`
+- **Descripción**: Herramientas para acceder y modificar discos virtuales de máquinas sin necesidad de arrancar el sistema operativo invitado.
+- **Función**: Proporciona la capacidad de interactuar con imágenes de máquinas virtuales, como editar archivos o realizar copias de seguridad.
+
+## `genisoimage`
+- **Descripción**: Herramienta que permite crear imágenes ISO a partir de archivos y directorios.
+- **Función**: Se utiliza para crear imágenes ISO, que pueden ser utilizadas para arrancar y realizar la instalación de sistemas operativos en máquinas virtuales.
+
+## `virtinst`
+- **Descripción**: Herramienta de línea de comandos para crear máquinas virtuales en sistemas que usan `libvirt`.
+- **Función**: Permite la creación de máquinas virtuales desde la terminal de manera automatizada, especificando recursos como CPU, memoria, disco y archivo ISO para la instalación.
+
+## `libosinfo-bin`
+- **Descripción**: Herramientas que permiten obtener información sobre sistemas operativos disponibles para ser utilizados en máquinas virtuales.
+- **Función**: Facilita la obtención de información sobre las versiones y configuraciones de sistemas operativos compatibles con las máquinas virtuales.
+
+## `virt-manager`
+- **Descripción**: Interfaz gráfica para la gestión de máquinas virtuales.
+- **Función**: Ofrece una interfaz visual fácil de usar para crear, configurar y gestionar máquinas virtuales, redes y almacenamiento en sistemas KVM.
+
+---
+
 Hemos instalado el core de KVM y los paquetes necesatrios para realizar bridges.
 
 ---
